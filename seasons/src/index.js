@@ -8,7 +8,6 @@ const App = () => {
     const [lat, errorMessage] = useLocation();
 
     let content;
-
     if (errorMessage) {
         content = <div>Error: {errorMessage}</div>;
     }else if (lat) {
